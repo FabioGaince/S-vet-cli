@@ -1,4 +1,4 @@
-CREATE database HistoriaClinica;
+CREATE database HistoriaClinica1;
 
 
 
@@ -119,7 +119,7 @@ CREATE TABLE EstadoGeneral(
 
 `Dientes` VARCHAR(100) NOT NULL,
 
-`Uñas` VARCHAR(60) NOT NULL,
+`UÃ±as` VARCHAR(60) NOT NULL,
 
 `Cod_Paciente` INT NULL,
 
@@ -260,7 +260,7 @@ CONSTRAINT `id_Paciente`FOREIGN KEY (`Cod_Paciente`)REFERENCES Pacientes (`codPa
 CREATE TABLE ComprobantePago (
   
 
-`N°Factura` INT NOT NULL auto_increment,
+`NÂ°Factura` INT NOT NULL auto_increment,
 
 `Propietario` VARCHAR(50) NOT NULL,
 
@@ -281,7 +281,7 @@ CREATE TABLE ComprobantePago (
 `Cod_Propietario` INT NOT NULL,
 
 
-PRIMARY KEY (`N°Factura`),
+PRIMARY KEY (`NÂ°Factura`),
 
 
 CONSTRAINT `codpropietario`FOREIGN KEY (`Cod_Propietario`) REFERENCES Propietario (`codHistoriaClinica`)
@@ -328,34 +328,34 @@ values('Junior Salazar', '1015538577','5761413', '3216635136','cr 7 # 21-46', 'j
 
 insert into pacientes(`Nombre`,`Especie`,`Raza`,`Genero`,`Color`,`Edad`,`F.C`,`F.R`,`TLLC` ,`Temperatura`,`Peso`,`Ciclo Estral`,`Planif.`,`Entero(a)`,`Castrado(a)`,`Vacunas`,`Desparacitacion`,`Anamnesicos`,`Antipulgas`,`Alimentacion`,`Cod_Propietario`)
 
-values('Taizon','Perro','Pitbull','Masculino','blanco','4','20','38.5°','54','35.5°', '25kg','lunes','1 mes','si','no','Antirrabia','si','no','si','Cada 6 veces al dia','1' ); 
+values('Taizon','Perro','Pitbull','Masculino','blanco','4','20','38.5Â°','54','35.5Â°', '25kg','lunes','1 mes','si','no','Antirrabia','si','no','si','Cada 6 veces al dia','1' ); 
 
 
 
 
 insert into pacientes(`Nombre`,`Especie`,`Raza`,`Genero`,`Color`,`Edad`,`F.C`,`F.R`,`TLLC` ,`Temperatura`,`Peso`,`Ciclo Estral`,`Planif.`,`Entero(a)`,`Castrado(a)`,`Vacunas`,`Desparacitacion`,`Anamnesicos`,`Antipulgas`,`Alimentacion`,`Cod_Propietario`)
 
-values('Kasper','Perro','Bulldog','Masculino','Rojo','6','50','60','46','32°', '62kg','jueves','3 mes','si','no','Antirrabia','no', 'si','si',' cada 3 veces al dia','2' ); 
+values('Kasper','Perro','Bulldog','Masculino','Rojo','6','50','60','46','32Â°', '62kg','jueves','3 mes','si','no','Antirrabia','no', 'si','si',' cada 3 veces al dia','2' ); 
 
 
 
 
 insert into pacientes(`Nombre`,`Especie`,`Raza`,`Genero`,`Color`,`Edad`,`F.C`,`F.R`,`TLLC` ,`Temperatura`,`Peso`,`Ciclo Estral`,`Planif.`,`Entero(a)`,`Castrado(a)`,`Vacunas`,`Desparacitacion`,`Anamnesicos`,`Antipulgas`,`Alimentacion`,`Cod_Propietario`)
 
-values('kanichi','gato','abisimo','Femenino','cafe','6','26','35','20','32°', '25kg','miercoles','7 mes','no','no','Triple','no', 'si','no','4 veces al dia','5' ); 
+values('kanichi','gato','abisimo','Femenino','cafe','6','26','35','20','32Â°', '25kg','miercoles','7 mes','no','no','Triple','no', 'si','no','4 veces al dia','5' ); 
 
 
 
 
 insert into pacientes(`Nombre`,`Especie`,`Raza`,`Genero`,`Color`,`Edad`,`F.C`,`F.R`,`TLLC` ,`Temperatura`,`Peso`,`Ciclo Estral`,`Planif.`,`Entero(a)`,`Castrado(a)`,`Vacunas`,`Desparacitacion`,`Anamnesicos`,`Antipulgas`,`Alimentacion`,`Cod_Propietario`)
 
-values('karoll','Cerdo','pietrain','Masculino','crema','6','30','20','34','30°', '55kg','viernes','3 mes','si','no','Parvo','no', 'si','si','3 veces al dia','3' ); 
+values('karoll','Cerdo','pietrain','Masculino','crema','6','30','20','34','30Â°', '55kg','viernes','3 mes','si','no','Parvo','no', 'si','si','3 veces al dia','3' ); 
 
 
 
 insert into pacientes(`Nombre`,`Especie`,`Raza`,`Genero`,`Color`,`Edad`,`F.C`,`F.R`,`TLLC` ,`Temperatura`,`Peso`,`Ciclo Estral`,`Planif.`,`Entero(a)`,`Castrado(a)`,`Vacunas`,`Desparacitacion`,`Anamnesicos`,`Antipulgas`,`Alimentacion`,`Cod_Propietario`)
 
-values('charlotte','Perro','bull terrier','Femenino','negro','5','10','20','40','45°', '28kg','miercoles','1 dia','si','si','Antirrabia','no', 'si','si ',' cada 4 horas','4' ); 
+values('charlotte','Perro','bull terrier','Femenino','negro','5','10','20','40','45Â°', '28kg','miercoles','1 dia','si','si','Antirrabia','no', 'si','si ',' cada 4 horas','4' ); 
 
 
 
@@ -365,33 +365,33 @@ values('charlotte','Perro','bull terrier','Femenino','negro','5','10','20','40',
 
 
 
-insert into EstadoGeneral(`Nariz`,`Boca`,`Ojos`,`Orejas`,`Piel`,`Extremidades`,`Mucosas`,`Pelaje`,`Dientes`,`Uñas`)
+insert into EstadoGeneral(`Nariz`,`Boca`,`Ojos`,`Orejas`,`Piel`,`Extremidades`,`Mucosas`,`Pelaje`,`Dientes`,`UÃ±as`)
 
 values('completa','caries','buen estado','bun estado','muy suave','buenas','no','deteriorado','completo','buen estado'); 
 
 
 
 
-insert into EstadoGeneral(`Nariz`,`Boca`,`Ojos`,`Orejas`,`Piel`,`Extremidades`,`Mucosas`,`Pelaje`,`Dientes`,`Uñas`)
+insert into EstadoGeneral(`Nariz`,`Boca`,`Ojos`,`Orejas`,`Piel`,`Extremidades`,`Mucosas`,`Pelaje`,`Dientes`,`UÃ±as`)
 
-values('herida grave','buen estado','buen estado','rasguñada','robusta','buenas','si','buen estado','regulares','regular'); 
+values('herida grave','buen estado','buen estado','rasguÃ±ada','robusta','buenas','si','buen estado','regulares','regular'); 
 
 
 
-insert into EstadoGeneral(`Nariz`,`Boca`,`Ojos`,`Orejas`,`Piel`,`Extremidades`,`Mucosas`,`Pelaje`,`Dientes`,`Uñas`)
+insert into EstadoGeneral(`Nariz`,`Boca`,`Ojos`,`Orejas`,`Piel`,`Extremidades`,`Mucosas`,`Pelaje`,`Dientes`,`UÃ±as`)
 
 values('buen estado','excelentes','buen estado','En excelente estado','buenas condiciones','buenas','si','muy deteriorado','completo','mal estado'); 
 
 
-insert into EstadoGeneral(`Nariz`,`Boca`,`Ojos`,`Orejas`,`Piel`,`Extremidades`,`Mucosas`,`Pelaje`,`Dientes`,`Uñas`)
+insert into EstadoGeneral(`Nariz`,`Boca`,`Ojos`,`Orejas`,`Piel`,`Extremidades`,`Mucosas`,`Pelaje`,`Dientes`,`UÃ±as`)
 
 values('completa','caries','buen estado','bun estado','esta muy debil','buenas','no','excelente','completo','buen estado'); 
 
 
 
-insert into EstadoGeneral(`Nariz`,`Boca`,`Ojos`,`Orejas`,`Piel`,`Extremidades`,`Mucosas`,`Pelaje`,`Dientes`,`Uñas`)
+insert into EstadoGeneral(`Nariz`,`Boca`,`Ojos`,`Orejas`,`Piel`,`Extremidades`,`Mucosas`,`Pelaje`,`Dientes`,`UÃ±as`)
 
-values('herida profunda','buen estado','excelente','rasguñada','bun estado','herida en la pierna frontal derecha','no','deteriorado','incompletos','normal');
+values('herida profunda','buen estado','excelente','rasguÃ±ada','bun estado','herida en la pierna frontal derecha','no','deteriorado','incompletos','normal');
 
 
 
@@ -444,13 +444,13 @@ values('aplicarse una crema para cicatrisar la nariz y  tomas un medicamento par
 
 insert into Observaciones(`Tratamiento`, `Observaciones`,`Cod_EstadoGeneral`,`Cod_Sistemas`)
 
-values('le aplicara cada 4 horas dos gotas y aplicarse la crema cada vez que lo baña','debe estar en mucho reposo','3','2'); 
+values('le aplicara cada 4 horas dos gotas y aplicarse la crema cada vez que lo baÃ±a','debe estar en mucho reposo','3','2'); 
 
 
 
 insert into Observaciones(`Tratamiento`, `Observaciones`,`Cod_EstadoGeneral`,`Cod_Sistemas`)
 
-values('debe aplicar cada vez que se baña la crema y tomar a cada 3 horas el remedio para la gastritis','debe estar sin correr ','4','4'); 
+values('debe aplicar cada vez que se baÃ±a la crema y tomar a cada 3 horas el remedio para la gastritis','debe estar sin correr ','4','4'); 
 
 
 
