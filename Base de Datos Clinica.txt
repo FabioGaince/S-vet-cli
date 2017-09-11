@@ -34,7 +34,7 @@ ENGINE = InnoDB;
 
 
 
-CREATE TABLE Pacientes (
+CREATE TABLE mascota (
 
 
 
