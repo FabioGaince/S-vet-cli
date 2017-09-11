@@ -1,8 +1,8 @@
-CREATE database HistoriaClinica1;
+CREATE database Veterinaria;
 
 
 
-use HistoriaClinica;
+use Veterinaria;
 
 
 
